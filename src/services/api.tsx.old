@@ -1,0 +1,211 @@
+// import axios from 'axios'
+
+// import {
+//   IRegisterDeviceRequestParams,
+//   IRegisterRequestParams,
+//   ILoginRequestParams,
+// } from '../interfaces/api'
+
+// const PATH = {
+//   APP: '/app',
+//   AUTH: '/auth',
+//   DEVICE: '/device',
+// }
+
+// // const client = axios.create({
+// //   baseURL: SERVICES.API,
+// //   responseType: 'json',
+// // })
+
+// const getHeaders = () => {
+//   return sessionStorage.getItem('token')
+//     ? {
+//         authorization: 'Bearer ' + sessionStorage.getItem('token'),
+//       }
+//     : {}
+// }
+
+// const getHeadersRefreshToken = () => {
+//   return sessionStorage.getItem('refresh_token')
+//     ? {
+//         authorization: 'Bearer ' + sessionStorage.getItem('refresh_token'),
+//       }
+//     : {}
+// }
+
+// export const getLanguage = async (currentLanguage: string) => {
+//   return await client
+//     .request({
+//       url: `${PATH.APP}/apptext?language=${currentLanguage}`,
+//       method: 'GET',
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const updateLanguage = async (deviceId: string, data: object) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/${deviceId}/language`,
+//       method: 'PUT',
+//       data,
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const registerDevice = async (data: IRegisterDeviceRequestParams) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/register`,
+//       method: 'POST',
+//       data,
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const getDevice = async (deviceId: string) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/${deviceId}`,
+//       method: 'GET',
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const getDeviceCurriculum = async (
+//   deviceId: string,
+//   language: string
+// ) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/${deviceId}/curriculum?language=${language}`,
+//       method: 'GET',
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const getDeviceCurriculumContent = async (
+//   deviceId: string,
+//   contentId: string,
+//   language: string
+// ) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/${deviceId}/content/${contentId}?language=${language}`,
+//       method: 'GET',
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const updateQuizAnswer = async (
+//   deviceId: string,
+//   quizId: string,
+//   data: object
+// ) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/${deviceId}/quiz/${quizId}`,
+//       method: 'PUT',
+//       data,
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const updateTopic = async (
+//   deviceId: string,
+//   topicId: string,
+//   data: object
+// ) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/${deviceId}/topic/${topicId}`,
+//       method: 'PUT',
+//       data,
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const addActivity = async (deviceId: string, data: object) => {
+//   return await client
+//     .request({
+//       url: `${PATH.DEVICE}/${deviceId}/activity`,
+//       method: 'POST',
+//       data,
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const register = async (data: IRegisterRequestParams) => {
+//   return await client
+//     .request({
+//       url: `${PATH.AUTH}/register`,
+//       method: 'POST',
+//       data,
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const refreshToken = async () => {
+//   return await client
+//     .request({
+//       url: `${PATH.AUTH}/refreshtoken`,
+//       method: 'GET',
+//       headers: getHeadersRefreshToken(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }
+
+// export const login = async (data: ILoginRequestParams) => {
+//   return await client
+//     .request({
+//       url: `${PATH.AUTH}/local`,
+//       method: 'POST',
+//       headers: getHeaders(),
+//     })
+//     .catch((err) => {
+//       console.log('err:', err.response)
+//       return err.response
+//     })
+// }

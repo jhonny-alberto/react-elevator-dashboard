@@ -1,0 +1,12 @@
+.MuiNativeSelect-root {
+  padding-left: 10px !important;
+}
+.MuiInput-underline:before {
+  border-bottom: none !important;
+}
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: none !important;
+}
+.MuiOutlinedInput-input {
+  padding: 10.5px 14px !important;
+}
