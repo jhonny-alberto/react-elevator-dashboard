@@ -50,5 +50,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## UI Framework
 
 ## Widgets
-Material UI
+use Material UI
 WindSpeed Chart
