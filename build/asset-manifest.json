@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0aaae22f.chunk.css",
+    "main.js": "/static/js/main.d4bcf5fa.chunk.js",
+    "main.js.map": "/static/js/main.d4bcf5fa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d4b1685c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d4b1685c.js.map",
+    "static/js/2.33249e18.chunk.js": "/static/js/2.33249e18.chunk.js",
+    "static/js/2.33249e18.chunk.js.map": "/static/js/2.33249e18.chunk.js.map",
+    "static/js/3.abd082f1.chunk.js": "/static/js/3.abd082f1.chunk.js",
+    "static/js/3.abd082f1.chunk.js.map": "/static/js/3.abd082f1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0aaae22f.chunk.css.map": "/static/css/main.0aaae22f.chunk.css.map",
+    "static/js/2.33249e18.chunk.js.LICENSE.txt": "/static/js/2.33249e18.chunk.js.LICENSE.txt",
+    "static/media/app-store-logo.fa3856c3.webp": "/static/media/app-store-logo.fa3856c3.webp",
+    "static/media/auth_back.49adde65.webp": "/static/media/auth_back.49adde65.webp",
+    "static/media/google-play-button.3de6f343.webp": "/static/media/google-play-button.3de6f343.webp",
+    "static/media/header-background.a3090ab2.webp": "/static/media/header-background.a3090ab2.webp",
+    "static/media/lifetech-footer.5a316afe.webp": "/static/media/lifetech-footer.5a316afe.webp",
+    "static/media/lifetech.7766af60.webp": "/static/media/lifetech.7766af60.webp",
+    "static/media/text.7d027dbc.svg": "/static/media/text.7d027dbc.svg",
+    "static/media/vector-person.0b902489.webp": "/static/media/vector-person.0b902489.webp",
+    "static/media/vector.faec8162.webp": "/static/media/vector.faec8162.webp",
+    "static/media/view.c60c46d9.svg": "/static/media/view.c60c46d9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4b1685c.js",
+    "static/js/2.33249e18.chunk.js",
+    "static/css/main.0aaae22f.chunk.css",
+    "static/js/main.d4bcf5fa.chunk.js"
+  ]
+}
